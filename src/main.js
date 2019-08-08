@@ -426,10 +426,10 @@ const renderHtml = function (element, component) {
   element.insertAdjacentHTML(`beforeend`, component);
 }
 
-renderHtml (main, getCardFormTaskComponent);
-renderHtml (mainControl, getMenuComponent);
-renderHtml (main, getSearchComponent);
-renderHtml (main, getFilterComponent);
-renderHtml (main, getCardTaksComponent);
-renderHtml (main, getCardTaksComponent);
-renderHtml (main, getCardTaksComponent);
+renderHtml (main, getCardFormTaskComponent());
+renderHtml (mainControl, getMenuComponent());
+renderHtml (main, getSearchComponent());
+renderHtml (main, getFilterComponent());
+renderHtml (main, getCardTaksComponent());
+renderHtml (main, getCardTaksComponent());
+renderHtml (main, getCardTaksComponent());
