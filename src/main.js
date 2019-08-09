@@ -1,3 +1,4 @@
+'use strict';
 const main = document.querySelector('.main');
 const mainControl = document.querySelector('.main__control');
 
@@ -190,7 +191,7 @@ const getCardTaksComponent = function () {
   `;
 };
 
-const getCardFormTaskComponent   = function () {
+const getCardFormTaskComponent = function () {
   return `
   <article class="card card--edit card--black">
   <form class="card__form" method="get">
@@ -424,12 +425,13 @@ const getLoadMore = function () {
 
 const renderHtml = function (element, component) {
   element.insertAdjacentHTML(`beforeend`, component);
-}
+};
 
-renderHtml (main, getCardFormTaskComponent());
-renderHtml (mainControl, getMenuComponent());
-renderHtml (main, getSearchComponent());
-renderHtml (main, getFilterComponent());
-renderHtml (main, getCardTaksComponent());
-renderHtml (main, getCardTaksComponent());
-renderHtml (main, getCardTaksComponent());
+renderHtml(main, getCardFormTaskComponent());
+renderHtml(mainControl, getMenuComponent());
+renderHtml(main, getSearchComponent());
+renderHtml(main, getFilterComponent());
+renderHtml(main, getCardTaksComponent());
+renderHtml(main, getCardTaksComponent());
+renderHtml(main, getCardTaksComponent());
+renderHtml(main, getLoadMore());
