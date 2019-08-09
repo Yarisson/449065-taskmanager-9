@@ -1,6 +1,6 @@
 'use strict';
-const main = document.querySelector('.main');
-const mainControl = document.querySelector('.main__control');
+const main = document.querySelector(`.main`);
+const mainControl = document.querySelector(`.main__control`);
 
 const getMenuComponent = function () {
   return `
